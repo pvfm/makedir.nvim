@@ -1,7 +1,7 @@
 local M = {}
 
 M.setup = function()
-  require("myplugin.commands").setup()
+  require("commands").setup()
 end
 
 return M
