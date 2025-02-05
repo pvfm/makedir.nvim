@@ -1,6 +1,6 @@
 local M = {}
 
-local utils = require('utils')
+local utils = require('mkdir_utils.utils')
 
 function M.setup()
   vim.api.nvim_create_user_command("mkdir", function(opts)
