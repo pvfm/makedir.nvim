@@ -1,7 +1,7 @@
 local M = {}
 
 M.setup = function()
-  require("commands").setup()
+  require("mkdir_plugin.commands").setup()
 end
 
 return M
