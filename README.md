@@ -1,15 +1,15 @@
 # My Vim Plugin
 
-A simple Neovim plugin to create directories from within Neovim using the `:mkdir` command.
+A simple Neovim plugin to create directories from within Neovim using the `:Makedir` command.
 
 ## 📦 Installation
 
 ### Using [Lazy.nvim](https://github.com/folke/lazy.nvim)
 ```lua
 {
-  "pvfm/mkdir.nvim",
+  "pvfm/makedir.nvim",
   config = function()
-    require("init").setup()
+    require("makedir_plugin").setup()
   end
 }
 ```
@@ -17,9 +17,9 @@ A simple Neovim plugin to create directories from within Neovim using the `:mkdi
 ### Using [Packer.nvim](https://github.com/wbthomason/packer.nvim)
 ```lua
 use({
-  "pvfm/mkdir.nvim",
+  "pvfm/makedir.nvim",
   config = function()
-    require("init").setup()
+    require("makedir_plugin").setup()
   end
 })
 ```
@@ -29,13 +29,12 @@ use({
 After installing, you can create a directory by running:
 
 ```vim
-:mkdir my_new_directory
+:Makedir my_new_directory
 ```
 
-## 🔧 Plugin Structure
 
 ```
-my-vim-plugin/
+makevim.nvim/
 │── lua/
 │   │ ├── init.lua       # Entry point
 │   │ ├── commands.lua   # Registers commands
@@ -45,7 +44,7 @@ my-vim-plugin/
 
 ## 🛠 How It Works
 
-1. The user runs `:mkdir my_new_directory`.
+1. The user runs `:Makedir my_new_directory`.
 2. A confirmation message is printed: `Directory created: my_new_directory`.
 
 ## 🔄 Future Improvements
@@ -55,5 +54,4 @@ my-vim-plugin/
 
 ## 📜 License
 This plugin is open-source and licensed under the MIT License.
-
 
